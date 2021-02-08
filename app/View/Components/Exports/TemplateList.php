@@ -1,0 +1,75 @@
+<?php
+
+namespace App\View\Components\Exports;
+
+use Illuminate\View\Component;
+
+class TemplateList extends Component
+{
+    /**
+     * Templates collection
+     * @var array
+     */
+    public $templates;
+
+    /**
+     * Current team id
+     * @var integer
+     */
+    public $teamId;
+
+    /**
+     * Simple data...
+     * @var array
+     */
+    protected $data = [
+        'A' => 'template-name-01.png',
+        'B' => 'template-name-02.png',
+        'C' => 'template-name-03.png',
+        'D' => 'template-name-01.png',
+        'E' => 'template-name-02.png',
+        'F' => 'template-name-03.png',
+    ];
+
+    /**
+     * Constructor.
+     * @param integer $teamId
+     * @return void
+     */
+    public function __construct(int $teamId)
+    {
+        $this->teamId = $teamId;
+        $this->templates = $this->getCollection();
+    }
+
+    /**
+     * Get the view|contents
+     * @return View|string
+     */
+    public function render()
+    {
+        return view('components.exports.template-list');
+    }
+
+    /**
+     * Get the rendered content
+     * @return string
+     */
+    public function toString()
+    {
+        return view('components.exports.template-list', [
+            'team_id'   => $this->teamId,
+            'templates' => $this->templates,
+        ])->render();
+    }
+
+    /**
+     * Get the data collection
+     * @return array
+     */
+    protected function getCollection()
+    {
+        return $this->data;
+    }
+
+}

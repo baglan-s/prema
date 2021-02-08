@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<realty-feed xmlns="http://prema.pro/schemas/feed/realty/2020-12">
+    <generation-date>2020-11-23T10:23:08+03:00</generation-date>
+    <offer internal-id="2731526200619">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Эврика</name>
+        <status>rent</status>
+        <area>455</area>
+        <area-free>152</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>455000</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Седова ул., 11, литер А</address>
+            <metro>Елизаровская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Эврика...
+        </description>
+        <images>
+            offer-1.jpg,
+            offer-101.jpg,
+            offer-102.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>10</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2367882200619">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>76</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>91200</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>3</floor>
+            </features>
+        </property>
+        <property internal-id="2664843200619">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>37</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>37000</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name B</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>4</floor>
+            </features>
+        </property>
+        <property internal-id="449077200619">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>39</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>46800</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name B</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>5</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2739245180604">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Лаборатория</name>
+        <status>rent</status>
+        <area>148</area>
+        <area-free>54</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>117155</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Полюстровский пр., д. 59, литер Ф</address>
+            <metro>Выборгская, Площадь Ленина, Лесная</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Лаборатория...
+        </description>
+        <images>
+            offer-2.jpg,
+            offer-201.jpg,
+            offer-202.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>4</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2739295180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>14</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>14000</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name C</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>4</floor>
+            </features>
+        </property>
+        <property internal-id="2738459180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>40</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>60000</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name B</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>4</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2532635180604">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Мельник</name>
+        <status>rent</status>
+        <area>1330</area>
+        <area-free>269.5</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>1729000</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>ул. Проф. Качалова, д. 7, Лит. А, Лит. Б</address>
+            <metro>Площадь Александра Невского, Новочеркасская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Мельник...
+        </description>
+        <images>
+            offer-3.jpg,
+            offer-301.jpg,
+            offer-302.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>11</storeys>
+            <lift>yes</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2532633180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>76.5</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>99450</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>11</floor>
+            </features>
+        </property>
+        <property internal-id="2532616180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>72.5</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>94250</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>11</floor>
+            </features>
+        </property>
+        <property internal-id="2532622180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>71.9</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>93470</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name B</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>11</floor>
+            </features>
+        </property>
+        <property internal-id="2532630180604">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>48.6</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>63180</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name D</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>11</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2583287201116">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Урал-Плаза</name>
+        <status>rent</status>
+        <area>175</area>
+        <area-free>168.7</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>122552</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>ул. Уральская, д. 19 корпус 10</address>
+            <metro>Приморская, Спортивная, Василеостровская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Урал-Плаза...
+        </description>
+        <images>
+            offer-4.jpg,
+            offer-401.jpg,
+            offer-402.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>6</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2583297201116">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>53</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>37116</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name D</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>1</floor>
+            </features>
+        </property>
+        <property internal-id="2583272201116">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>45.7</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>43510</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name D</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>1</floor>
+            </features>
+        </property>
+        <property internal-id="2729860201116">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>70</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>41930</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>1</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2490761201111">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Потапов</name>
+        <status>rent</status>
+        <area>241</area>
+        <area-free>99</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>215008</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>ш. Революции, д. 69, корп. 102</address>
+            <metro>Ладожская, Проспект Большевиков, Новочеркасская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Потапов...
+        </description>
+        <images>
+            offer-5.jpg,
+            offer-501.jpg,
+            offer-502.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>4</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2490785201111">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>40</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>36000</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name C</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>4</floor>
+            </features>
+        </property>
+        <property internal-id="2490710201111">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>59</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>53100</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name C</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>4</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2164659200803">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Троицкий</name>
+        <status>rent</status>
+        <area>348</area>
+        <area-free>161.4</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>662492</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>ул. Мира, д. 3</address>
+            <metro>Горьковская, Петроградская, Чкаловская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Троицкий...
+        </description>
+        <images>
+            offer-6.jpg,
+            offer-601.jpg,
+            offer-602.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>5</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2164655200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>161.4</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>306498</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name B</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>1</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2369169201117">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Радуга</name>
+        <status>rent</status>
+        <area>95</area>
+        <area-free>48.2</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>81000</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>6 линия В.О., д. 63</address>
+            <metro>Василеостровская, Спортивная, Адмиралтейская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Радуга...
+        </description>
+        <images>
+            offer-7.jpg,
+            offer-701.jpg,
+            offer-702.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>5</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2369168201117">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>48.2</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>25064</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name C</current-tenant>
+            <for-sale>no</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>2</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2730017200803">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Кондратьевский 2</name>
+        <status>rent</status>
+        <area>187</area>
+        <area-free>73</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>177893</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Кондратьевский пр., д. 2 к. 4</address>
+            <metro>Площадь Ленина</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Кондратьевский 2...
+        </description>
+        <images>
+            offer-8.jpg,
+            offer-801.jpg,
+            offer-802.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>7</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2730016200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>73</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>69445</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>7</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2397979200803">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Кантемировский</name>
+        <status>rent</status>
+        <area>75</area>
+        <area-free>74.8</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>yes</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>63580</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Аптекарская наб., д.12</address>
+            <metro>Петроградская, Выборгская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Кантемировский...
+        </description>
+        <images>
+            offer-9.jpg,
+            offer-901.jpg,
+            offer-902.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>5</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2397959200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>57.8</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>49130</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name D</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>-1</floor>
+            </features>
+        </property>
+        <property internal-id="2397962200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>17</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>14450</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>-1</floor>
+            </features>
+        </property>
+    </offer>
+    <offer internal-id="2681827200803">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <name>Бухарестская 8</name>
+        <status>rent</status>
+        <area>238</area>
+        <area-free>179</area-free>
+        <sale-entire>no</sale-entire>
+        <rent-entire>no</rent-entire>
+        <price-sale></price-sale>
+        <price-rent>143280</price-rent>
+        <price-unit>RUB</price-unit>
+        <price-period>month</price-period>
+        <location>
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>ул. Бухарестская, д. 8</address>
+            <metro>Волковская</metro>
+            <lat></lat>
+            <lon></lon>
+        </location>
+        <description>
+            Описание бизнес-центра Бухарестская 8...
+        </description>
+        <images>
+            offer-10.jpg,
+            offer-1001.jpg,
+            offer-1002.jpg,
+        </images>
+        <plan-images>
+            exports/images/offers/plan3.jpg,
+            exports/images/offers/plan2.jpg,
+            exports/images/offers/plan1.jpg,
+        </plan-images>
+        <building>
+            <type>business center</type>
+            <storeys>6</storeys>
+            <lift>no</lift>
+        </building>
+        <features>
+            <car-place>parking</car-place>
+        </features>
+        <sales-agent>
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <email>manager.email@example.com</email>
+            <category>agency</category>
+        </sales-agent>
+        <property internal-id="2617687200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>40</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>22800</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>6</floor>
+            </features>
+        </property>
+        <property internal-id="2697376200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>36</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>20520</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>6</floor>
+            </features>
+        </property>
+        <property internal-id="2738487200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>27</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>15390</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>6</floor>
+            </features>
+        </property>
+        <property internal-id="21579599617200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>34</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>19380</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>6</floor>
+            </features>
+        </property>
+        <property internal-id="2157967200803">
+            <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+            <name>office</name>
+            <area>42</area>
+            <status>rent</status>
+            <price-sale></price-sale>
+            <price-rent>24168</price-rent>
+            <price-unit>RUB</price-unit>
+            <price-period>month</price-period>
+            <current-tenant>Tenant Name A</current-tenant>
+            <for-sale>yes</for-sale>
+            <description>
+                Описание офиса...
+            </description>
+            <images>
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images>
+            <features>
+                <floor>6</floor>
+            </features>
+        </property>
+    </offer>
+</realty-feed>

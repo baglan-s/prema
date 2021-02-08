@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<realty-feed xmlns="http://prema.pro/schemas/feed/realty/2020-12">
+    <generation-date>2020-11-23T10:23:08+03:00</generation-date>
+    <offer internal-id="2700000001">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+
+        <name>Название Объекта</name> <!-- Required -->
+
+        <area>524</area> <!-- Required -->
+
+        <status>sale</status> <!-- Required (sale|rent) -->
+
+        <sale-entire>yes</sale-entire> <!-- Required if status === sale -->
+
+        <rent-entire>yes</rent-entire> <!-- Required if status === rent -->
+
+        <price-sale>45500000</price-sale> <!-- Required if status === sale -->
+
+        <price-rent>455000</price-rent> <!-- Required if status === rent -->
+
+        <price-unit>RUB</price-unit> <!-- Required -->
+
+        <price-period>month</price-period> <!-- Required if status === rent -->
+
+        <location> <!-- Required -->
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Седова ул., 11, литер А</address>
+            <metro>Елизаровская</metro>
+            <lat>32.212549</lat>
+            <lon>64.045124</lon>
+        </location> <!-- ... -->
+
+        <description> <!-- Optional -->
+            Описание бизнес-центра...
+        </description> <!-- ... -->
+
+        <images> <!-- Optional -->
+            https://www.biz-cen.ru/photos/building-image-01.jpg,
+            https://www.biz-cen.ru/photos/building-image-02.jpg,
+            https://www.biz-cen.ru/photos/building-image-03.jpg,
+        </images> <!-- .... -->
+
+        <building> <!-- Optional -->
+            <type>business center</type>
+            <storeys>10</storeys>
+            <lift>no</lift>
+        </building> <!-- ... -->
+
+        <features> <!-- Optional -->
+            <car-place>parking</car-place>
+        </features> <!-- ... -->
+
+        <sales-agent> <!-- Required -->
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <category>agency</category>
+        </sales-agent> <!-- ... -->
+
+        <property> <!-- Required -->
+
+            <area>48</area> <!-- Required -->
+
+            <status>sale</status> <!-- Required (sale|rent) -->
+
+            <price-sale>9587570 </price-sale> <!-- Required if property.status === sale -->
+
+            <price-rent>48578</price-rent> <!-- Required if property.status === rent -->
+
+            <price-unit>RUB</unit> <!-- Required -->
+
+            <price-period>month</price-period> <!-- Required if property.status === rent -->
+
+            <current-tenant>Текущий Арендатор</current-tenant> <!-- Required if property.status === rent -->
+
+            <for-sale>yes</for-sale> <!-- Required if property.status === rent -->
+
+            <description> <!-- Optional -->
+                Описание офиса...
+            </description> <!-- ... -->
+
+            <images> <!-- Optional -->
+                https://www.biz-cen.ru/photos/office-image-01.jpg,
+                https://www.biz-cen.ru/photos/office-image-02.jpg,
+                https://www.biz-cen.ru/photos/office-image-03.jpg,
+            </images> <!-- .... -->
+
+            <features> <!-- Optional -->
+                <floor>4</floor>
+            </features> <!-- ... -->
+
+            <internal-id>1245785454</internal-id>
+
+        </property> <!-- ... -->
+
+    </offer>
+</realty-feed>

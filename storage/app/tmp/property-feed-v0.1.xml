@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<realty-feed xmlns="http://prema.pro/schemas/feed/realty/2020-12">
+    <generation-date>2020-11-23T10:23:08+03:00</generation-date>
+    <offer internal-id="2700000000">
+        <last-update-date>2020-11-23T10:23:08+03:00</last-update-date>
+        <creation-date>2020-11-23T08:00:00+03:00</creation-date>
+        <category>commerce</category>
+
+        <unit-estate>office</unit-estate> <!-- Required (building|office|...) -->
+        <dedicated-unit>no</dedicated-unit> <!-- Required if unit-estate == office -->
+        <has-units>yes</has-units> <!-- Required if unit-estate == building -->
+
+        <office> <!-- Required if unit-estate == office -->
+            <storey>4</storey>
+            <storeys>10</storeys>
+            <area>51</area>
+        </office> <!-- ... -->
+
+        <building> <!-- Required if unit-estate == building OR dedicated-unit == yes -->
+            <type>business center</type>
+            <name>Эврика</name>
+            <area>445</area>
+            <storeys>10</storeys>
+        </building> <!-- ... -->
+
+        <location> <!-- Required if unit-estate == building OR dedicated-unit == yes -->
+            <country>Россия</country>
+            <city>Санкт-Петербург</city>
+            <address>Седова ул., 11, литер А</address>
+            <metro>Елизаровская</metro>
+            <latitude>32.212549</latitude>
+            <longitude>64.045124</longitude>
+        </location> <!-- ... -->
+
+        <deal-type>rent</deal-type> <!-- Required (rent|sale) -->
+        <rent> <!-- Required if deal-type == rent -->
+            <status>direct</status>
+            <entire>yes</entire>
+            <pledge>no</pledge>
+        </rent> <!-- ... -->
+
+        <deal-type>sale</deal-type> <!-- Required (rent|sale) -->
+        <sale> <!-- Required if deal-type == sale -->
+           <entire>yes</entire>
+        </sale> <!-- ... -->
+
+        <price-rent> <!-- Required if deal-type == rent -->
+            <per-entire>455000</per-entire>
+            <per-meter>995</per-meter>
+            <unit>RUB</unit>
+            <period>month</period>
+            <taxation>VAT</taxation>
+        </price-rent> <!-- ... -->
+
+        <price-sale> <!-- Required if deal-type == sale -->
+            <per-entire>455000</per-entire>
+            <per-meter>995</per-meter>
+            <unit>RUB</unit>
+            <taxation>VAT</taxation>
+            <prepayment>25</prepayment>
+            <commission>0</commission>
+            <security>100</security>
+        </price-sale> <!-- ... -->
+
+        <current-tenant>something</current-tenant> <!-- Required if deal-type == rent -->
+
+        <sales-agent> <!-- Required if unit-estate == building OR dedicated-unit == yes -->
+            <phone>+7 (812) 409-43-85</phone>
+            <organization>Биз-цен</organization>
+            <photo>http://www.biz-cen.ru/spam/images/logo.jpg</photo>
+            <url>https://www.biz-cen.ru/</url>
+            <category>agency</category>
+        </sales-agent> <!-- ... -->
+
+        <description>Описание бизнес-центра...</description> <!-- Optional -->
+
+        <image>https://www.biz-cen.ru/photos2/77/822/77_822_1000.jpg</image>   <!-- Optional -->
+        <image>https://www.biz-cen.ru/photos2/77/5421/77_1209_1000.jpg</image> <!-- Optional -->
+        <image>https://www.biz-cen.ru/photos2/77/6351/77_6351_1000.jpg</image> <!-- Optional -->
+
+        <video-review>https://www.youtube.com/watch?v=7T9SFZDP625</video-review> <!-- Optional -->
+
+        <url>https://www.biz-cen.ru/evrika/</url> <!-- Optional if unit-estate == building OR dedicated-unit == yes -->
+
+        <car-place>parking</car-place> <!-- Optional if unit-estate == building OR dedicated-unit == yes -->
+        <parking> <!-- Required if car-place == parking -->
+            <number-places>639</number-places>
+            <place-price>3500</place-price>
+        </parking> <!-- ... -->
+
+        <rent-includes> <!-- Optional if deal-type == rent -->
+            <cleaning>yes</cleaning>
+            <utilities>yes</utilities>
+            <electricity>no</electricity>
+        </rent-includes> <!-- ... -->
+
+        <rent-telecom> <!-- Optional if deal-status == rent -->
+            <internet>yes</internet>
+            <phone-lines>3</phone-lines>
+            <extra-phones>yes</extra-phones>
+            <extra-providers>yes</extra-providers>
+        </rent-telecom> <!-- ... -->
+
+        <sale-telecom> <!-- Optional if deal-type == sale -->
+            <internet>yes</internet>
+            <phone-lines>3</phone-lines>
+        </sale-telecom> <!-- ... -->
+
+        <office-features> <!-- Optional if unit-estate == office -->
+            <condition>хорошее</condition>
+            <repair>хороший</repair>
+            <furniture>no</furniture>
+            <conditioner>no</conditioner>
+        </office-features> <!-- ... -->
+
+        <building-features> <!-- Optional if unit-estate == building -->
+            <ceiling-height>3.5</ceiling-height>
+            <guard-service>no</guard-service>
+            <access-control>no</access-control>
+            <fire-alarm>yes</fire-alarm>
+            <eating-place>yes</eating-place>
+            <passenger-lift>no</passenger-lift>
+            <office-class>B+</office-class>
+        </building-features> <!-- ... -->
+
+    </offer>
+</realty-feed>
