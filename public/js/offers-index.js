@@ -42,6 +42,11 @@
                                     let action = item.getAttribute('data-action');
 
                                     item.addEventListener('click', () => {
+                                        let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
+                                        if (offerSelector.length > 4) {
+                                            alert('Max offers quantity to choose: 4');
+                                            return false;
+                                        }
                                         $('#exportFilter').modal('show');
                                         let generatePres = document.querySelector('#generatePres');
 

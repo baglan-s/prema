@@ -3,20 +3,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <link media="screen" rel="stylesheet" href="{{ url('exports/templates/css/definitions.css?v=').time() }}">
-    <link media="screen" rel="stylesheet" href="{{ url('exports/templates/css/3.css?v=').time() }}">
+    <link media="screen" rel="stylesheet" href="{{ url('exports/templates/css/5.css?v=').time() }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         .page-break { page-break-after: always; }
     </style>
 </head>
-<body>
+<body class="new-body">
 
 
 <div class="content">
-    @component('exports.components.3.header', ['logo' => $logo, 'params' => $params]) @endcomponent
-    <div class="inner-content width-80">
-        <table class="info-table width-100">
+    @component('exports.components.5.header', ['logo' => $logo, 'params' => $params]) @endcomponent
+    <div class="inner-content">
+        <table class="info-table">
             <thead>
                 <tr>
                     <td></td>
@@ -156,10 +156,11 @@
             </tbody>
         </table>
     </div>
-    @component('exports.components.3.footer') @endcomponent
+
+    @component('exports.components.5.footer') @endcomponent
     <p class="page-break"></p>
 
-    @component('exports.components.3.header') @endcomponent
+    @component('exports.components.5.header') @endcomponent
 
         @php
             $map_src = 'https://maps.googleapis.com/maps/api/staticmap?center=';
@@ -179,8 +180,13 @@
         @endforeach
         @php($map_src .= '&key=' . env('GOOGLE_MAPS_API_KEY'))
 
-    <div class="inner-content width-80">
-        <div class="width-28 dinline-block p-r-20">
+        <div class="inner-content width-100">
+        <div class="width-65 dinline-block p-r-20">
+            <div class="objects-map">
+                <img src="{{ $map_src }}" alt="">
+            </div>
+        </div>
+        <div class="width-35 dinline-block">
             <div class="objects-list">
                 <div class="list-title">
                     <p>Объект</p>
@@ -192,14 +198,9 @@
                 </ul>
             </div>
         </div>
-        <div class="width-68 dinline-block">
-            <div class="objects-map">
-                <img src="{{ $map_src }}" alt="">
-            </div>
-        </div>
     </div>
 
-    @component('exports.components.3.footer') @endcomponent
+    @component('exports.components.5.footer') @endcomponent
     <p class="page-break"></p>
 
 </div>

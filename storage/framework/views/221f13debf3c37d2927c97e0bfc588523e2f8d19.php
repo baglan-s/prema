@@ -24,151 +24,139 @@
             <thead>
                 <tr>
                     <td></td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td>
+                            <div class="image-block" style="background-image: url(<?php echo e(asset('exports/images/offers/' . $offer->images[0])); ?>)"></div>
+                        </td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
                 <tr class="title-row">
                     <th>Номер объекта</th>
-                    <th>#1</th>
-                    <th>#2</th>
-                    <th>#3</th>
-                    <th>#4</th>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <th>#<?php echo e($loop->iteration); ?></th>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th class="cs-bg-white">Здание</th>
-                    <td class="cs-bg-1">Алкон (стр. 4)</td>
-                    <td class="cs-bg-white">Особняк на Смоленской</td>
-                    <td class="cs-bg-1">Б.Татарская 35с4</td>
-                    <td class="cs-bg-white">60 Город Столиц (Северная Башня)</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <th class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>"><?php echo e($offer->name); ?></th>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
-                <tr>
-                    <th class="cs-bg-white">Адрес</th>
-                    <td class="cs-bg-1">Ленинградский пр., д. 72, стр. 4</td>
-                    <td class="cs-bg-white">Большой Левшинский Пер., 1/11</td>
-                    <td class="cs-bg-1">Б.Татарская 35с4</td>
-                    <td class="cs-bg-white">Пресненская наб., 8с1</td>
-                </tr>
+                <?php if(isset($params['main']['address']) && !empty($params['main']['address'])): ?>
+                    <tr>
+                        <th class="cs-bg-white">Адрес</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <th class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>"> <?php echo e($offer->location['city']); ?>, <?php echo e($offer->location['address']); ?></th>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
                 <tr>
                     <th class="cs-bg-white">Расположение</th>
-                    <td class="cs-bg-1">САО</td>
-                    <td class="cs-bg-white">ЦАО</td>
-                    <td class="cs-bg-1">ЦАО</td>
-                    <td class="cs-bg-white">ЦАО</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>"></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
-                <tr>
-                    <th class="cs-bg-white">Станция метро</th>
-                    <td class="cs-bg-1">Сокол</td>
-                    <td class="cs-bg-white">Кропоткинская</td>
-                    <td class="cs-bg-1">Новокузнецкая, Третьяковская</td>
-                    <td class="cs-bg-white">Международная</td>
-                </tr>
-                <tr>
-                    <th class="cs-bg-2">Класс здания</th>
-                    <td class="cs-bg-3">А</td>
-                    <td class="cs-bg-2">В</td>
-                    <td class="cs-bg-3">В+</td>
-                    <td class="cs-bg-2">А</td>
-                </tr>
-                <tr>
-                    <th class="cs-bg-2">Описание здания</th>
-                    <td class="cs-bg-3">
-                        Бизнес-комплекс, состоящий из 4 зданий с общей инфраструктурой: рестораны, столовая, кафе, банк.
-                    </td>
-                    <td class="cs-bg-2">
-                        3-этажный реконструированный клубный особняк с мансардой и подвалом общей площадью около 1 497,9 кв. м.
-                        Три входа. Центральное расположение. Удобный доступ на Бульварное и Садовое кольцо.
-                    </td>
-                    <td class="cs-bg-3">
-                        Административное здание расположено в Замоскворечье. Высокие потолки и большие окна.
-                        Качественная отделка, помещения готовы к въезду
-                    </td>
-                    <td class="cs-bg-2">
-                        Многофункциональный комплекс класса А, часть комплекса Москва-Сити.
-                        Развитая инфраструктура: рестораны, кафе, торговая зона и фитнес-центр.
-                        Якорные арендаторы: Capital Group, Renaissance Credit, Goltsblat BLP, Amgen.
-                    </td>
-                </tr>
+                <?php if(isset($params['main']['metro'])): ?>
+                    <tr>
+                        <th class="cs-bg-white">Станция метро</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>">
+                                <?php if($metro = $offer->location['metro']): ?>
+                                    <?php $__currentLoopData = $metro; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $name): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <?php echo $loop->last ? $name.'' : $name.', '; ?>
+
+                                        <?php if($loop->iteration == 2): ?> <?php break; ?> <?php endif; ?>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                <?php endif; ?>
+                            </td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
+                <?php if(isset($params['general']['building_type'])): ?>
+                    <tr>
+                        <th class="cs-bg-2">Класс здания</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>"><?php echo e($offer->building['type']); ?></td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
+                <?php if(isset($params['main']['description']) && !empty($params['main']['description'])): ?>
+                    <tr>
+                        <th class="cs-bg-2">Описание здания</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-white <?php else: ?> cs-bg-1 <?php endif; ?>"><?php echo e($offer->description); ?></td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
                 <tr>
                     <th class="cs-bg-2">Дата ввода в эксплуатацию</th>
-                    <td class="cs-bg-3">2012-10-01</td>
-                    <td class="cs-bg-2"></td>
-                    <td class="cs-bg-3"></td>
-                    <td class="cs-bg-2">2009-08-01</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"><?php echo e(date('d-m-Y', strtotime($offer->created_at))); ?></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
                 <tr>
                     <th class="cs-bg-2">Арендодатель / Девелопер</th>
-                    <td class="cs-bg-3">2012-10-01</td>
-                    <td class="cs-bg-2">KR Properties</td>
-                    <td class="cs-bg-3">HALS Development</td>
-                    <td class="cs-bg-2">Capital Group</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"><?php echo e($offer->team->name ?? ''); ?></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
                 <tr>
                     <th class="cs-bg-2">Пешая доступность от метро</th>
-                    <td class="cs-bg-3">5</td>
-                    <td class="cs-bg-2">7</td>
-                    <td class="cs-bg-3">7</td>
-                    <td class="cs-bg-2">5</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
-                <tr>
-                    <th class="cs-bg-2">Общая арендуемая площадь здания, м &sup2;</th>
-                    <td class="cs-bg-3">19 893</td>
-                    <td class="cs-bg-2"></td>
-                    <td class="cs-bg-3">6 259</td>
-                    <td class="cs-bg-2">47 814</td>
-                </tr>
-                <tr>
-                    <th class="cs-bg-2">Свободная площадь, м &sup2;</th>
-                    <td class="cs-bg-3">1 689</td>
-                    <td class="cs-bg-2">1 498</td>
-                    <td class="cs-bg-3">6 259</td>
-                    <td class="cs-bg-2">1 232</td>
-                </tr>
-                <tr>
-                    <th class="cs-bg-2">Парковка</th>
-                    <td class="cs-bg-3">подземная - 1016 мест, 17 500 руб коэффициент - 1:60</td>
-                    <td class="cs-bg-2">наземная - 22 000 руб</td>
-                    <td class="cs-bg-3">наземная - 25 мест, 15 000 руб коэффициент - 1/20</td>
-                    <td class="cs-bg-2">коэффициент - 1/60</td>
-                </tr>
+                <?php if(isset($params['general']['total_area'])): ?>
+                    <tr>
+                        <th class="cs-bg-2">Общая арендуемая площадь здания, м &sup2;</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"><?php echo e($offer->area); ?> м²</td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
+                <?php if(isset($params['general']['free_area'])): ?>
+                    <tr>
+                        <th class="cs-bg-2">Свободная площадь, м &sup2;</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"><?php echo e($offer->area_free); ?> м²</td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
+                <?php if(isset($params['general']['infrastructure'])): ?>
+                    <tr>
+                        <th class="cs-bg-2">Парковка</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"><?php echo e($offer->features['car-place'] == 'parking' ? 'Есть' : ''); ?></td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
                 <tr>
                     <th class="cs-bg-2">Управляющая компания</th>
-                    <td class="cs-bg-3"></td>
-                    <td class="cs-bg-2"></td>
-                    <td class="cs-bg-3"></td>
-                    <td class="cs-bg-2"></td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-3 <?php else: ?> cs-bg-2 <?php endif; ?>"></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
-                <tr>
-                    <th class="cs-bg-white">Арендная ставка/м &sup2;/ год</th>
-                    <td class="cs-bg-1">от 25000 руб. до 30000 руб</td>
-                    <td class="cs-bg-white">28333 руб</td>
-                    <td class="cs-bg-1">20000 руб.</td>
-                    <td class="cs-bg-white">от 40000 руб. до 46000 руб.</td>
-                </tr>
+                <?php if(isset($params['commercial']['main_rent'])): ?>
+                    <tr>
+                        <th class="cs-bg-white">Арендная ставка</th>
+                        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <td class="<?php if($loop->iteration%2==0): ?> cs-bg-1 <?php else: ?> cs-bg-white <?php endif; ?>">от <?php echo e($offer->propertys()->min('price_rent')); ?> руб. до <?php echo e($offer->propertys()->max('price_rent')); ?> руб.</td>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    </tr>
+                <?php endif; ?>
                 <tr>
                     <th class="cs-bg-white">Операционные расходы/м &sup2;/ год</th>
-                    <td class="cs-bg-1">Exclude 8000</td>
-                    <td class="cs-bg-white">Exclude 5000 RUB/м2 в год</td>
-                    <td class="cs-bg-1">Exclude 4000</td>
-                    <td class="cs-bg-white">Exclude 7500</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-1 <?php else: ?> cs-bg-white <?php endif; ?>"></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
                 <tr>
                     <th class="cs-bg-white">Кольцевая зона</th>
-                    <td class="cs-bg-1">TTR</td>
-                    <td class="cs-bg-white">SK</td>
-                    <td class="cs-bg-1">SK</td>
-                    <td class="cs-bg-white">TTR</td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td class="<?php if($loop->iteration%2==0): ?> cs-bg-1 <?php else: ?> cs-bg-white <?php endif; ?>"></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
             </tbody>
         </table>
@@ -186,6 +174,24 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 
+        <?php
+            $map_src = 'https://maps.googleapis.com/maps/api/staticmap?center=';
+            $map_tools = [
+                ['name' => 'B', 'color' => 'blue'],
+                ['name' => 'S', 'color' => 'red'],
+                ['name' => 'G', 'color' => 'green'],
+                ['name' => 'C', 'color' => 'pink'],
+            ];
+        ?>
+        <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if($loop->iteration == 1): ?>
+                <?php ($map_src .= $offer->location['lat'] . ',' . $offer->location['lon'] . '&zoom=9&size=800x600&markers=color:' . $map_tools[$loop->index]['color'] . '%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C' . $offer->location['lat'] . ',' . $offer->location['lon']); ?>
+            <?php else: ?>
+                <?php ($map_src .= '&markers=color:' . $map_tools[$loop->index]['color'] . '%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C' .  $offer->location['lat'] . ',' . $offer->location['lon'] . '&markers=color:blue%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C'); ?>
+            <?php endif; ?>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        <?php ($map_src .= '&key=' . env('GOOGLE_MAPS_API_KEY')); ?>
+
     <div class="inner-content width-80">
         <div class="width-28 dinline-block p-r-20">
             <div class="objects-list">
@@ -193,15 +199,16 @@
                     <p>Объект</p>
                 </div>
                 <ul>
-                    <li>Алкон (стр. 4)</li>
-                    <li>Особняк на Смоленской</li>
-                    <li>Б.Татарская 35с4</li>
-                    <li>60 Город Столиц (Северная Башня)</li>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <li><?php echo e($offer->name); ?></li>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </ul>
             </div>
         </div>
         <div class="width-68 dinline-block">
-            <div class="objects-map"></div>
+            <div class="objects-map">
+                <img src="<?php echo e($map_src); ?>" alt="">
+            </div>
         </div>
     </div>
 

@@ -20,154 +20,124 @@
             <thead>
                 <tr class="images-row">
                     <td></td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
-                    <td>
-                        <div class="image-block"></div>
-                    </td>
+                    @foreach($data[0] as $offer)
+                        <td>
+                            <div class="image-block" style="background-image: url({{ asset('exports/images/offers/' . $offer->images[0]) }})"></div>
+                        </td>
+                    @endforeach
                 </tr>
                 <tr class="title-row">
                     <td></td>
-                    <th>
-                        <span>Алкон</span>
-                    </th>
-                    <th>
-                        <span>Особняк на смоленской</span>
-                    </th>
-                    <th>
-                        <span>Б.Татарская 35 с4</span>
-                    </th>
-                    <th>
-                        <span>60 город столиц (северная башня)</span>
-                    </th>
+                    @foreach($data[0] as $offer)
+                        <th>
+                            <span>{{ $offer->name }}</span>
+                        </th>
+                    @endforeach
                 </tr>
-                <tr class="address-row">
-                    <td></td>
-                    <th>
-                        Ленинградский пр., д. 72, стр. 4 <br>
-                        САО <br>
-                        м. Сокол <br>
-                    </th>
-                    <th>
-                        Большой Левшинский Пер., 1/11 <br>
-                        САО <br>
-                        м. Сокол <br>
-                    </th>
-                    <th>
-                        Б.Татарская 35с4 <br>
-                        САО <br>
-                        м. Сокол <br>
-                    </th>
-                    <th>
-                        Пресненская наб., 8с1 <br>
-                        САО <br>
-                        м. Сокол <br>
-                    </th>
-                </tr>
+                @if (isset($params['main']['address']) && !empty($params['main']['address']))
+                    <tr class="address-row">
+                        <td></td>
+                        @foreach($data[0] as $offer)
+                            <th>
+                                {{ $offer->location['city'] }}, {{ $offer->location['address'] }} <br>
+                                САО <br>
+                                @if (isset($params['main']['metro']) && $metro = $offer->location['metro'])
+                                    @foreach($metro as $name)
+                                        {!! $loop->last ? $name.'' : $name.', ' !!}
+                                        @if($loop->iteration == 2) @break @endif
+                                    @endforeach
+                                @endif
+                                 <br>
+                            </th>
+                        @endforeach
+                    </tr>
+                @endif
             </thead>
             <tbody>
+            @if(isset($params['general']['building_type']))
                 <tr>
                     <th>Класс здания</th>
-                    <td>А</td>
-                    <td>В</td>
-                    <td>В+</td>
-                    <td>А</td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->building['type'] }}</td>
+                    @endforeach
                 </tr>
+            @endif
+            @if (isset($params['main']['description']) && !empty($params['main']['description']))
                 <tr>
                     <th>Описание здания</th>
-                    <td>
-                        Бизнес-комплекс, состоящий из 4 зданий с общей инфраструктурой: рестораны, столовая, кафе, банк.
-                    </td>
-                    <td>
-                        3-этажный реконструированный клубный особняк с мансардой и подвалом общей площадью около 1 497,9 кв. м.
-                        Три входа. Центральное расположение. Удобный доступ на Бульварное и Садовое кольцо.
-                    </td>
-                    <td>
-                        Административное здание расположено в Замоскворечье. Высокие потолки и большие окна.
-                        Качественная отделка, помещения готовы к въезду
-                    </td>
-                    <td>
-                        Многофункциональный комплекс класса А, часть комплекса Москва-Сити.
-                        Развитая инфраструктура: рестораны, кафе, торговая зона и фитнес-центр.
-                        Якорные арендаторы: Capital Group, Renaissance Credit, Goltsblat BLP, Amgen.
-                    </td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->description }}</td>
+                    @endforeach
                 </tr>
+            @endif
                 <tr>
                     <th>Дата ввода в эксплуатацию</th>
-                    <td>2012-10-01</td>
-                    <td></td>
-                    <td></td>
-                    <td>2009-08-01</td>
+                    @foreach($data[0] as $offer)
+                        <td >{{ date('d-m-Y', strtotime($offer->created_at)) }}</td>
+                    @endforeach
                 </tr>
                 <tr>
                     <th>Арендодатель / Девелопер</th>
-                    <td>2012-10-01</td>
-                    <td>KR Properties</td>
-                    <td>HALS Development</td>
-                    <td>Capital Group</td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->team->name ?? '' }}</td>
+                    @endforeach
                 </tr>
                 <tr>
                     <th>Пешая доступность от метро</th>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>5</td>
+                    @foreach($data[0] as $offer)
+                        <td></td>
+                    @endforeach
                 </tr>
+            @if(isset($params['general']['total_area']))
                 <tr>
                     <th>Общая арендуемая площадь здания, м &sup2;</th>
-                    <td>19 893</td>
-                    <td></td>
-                    <td>6 259</td>
-                    <td>47 814</td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->area }} м²</td>
+                    @endforeach
                 </tr>
+            @endif
+            @if(isset($params['general']['free_area']))
                 <tr>
                     <th>Свободная площадь, м &sup2;</th>
-                    <td>1 689</td>
-                    <td>1 498</td>
-                    <td>6 259</td>
-                    <td>1 232</td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->area_free }} м²</td>
+                    @endforeach
                 </tr>
+            @endif
+            @if(isset($params['general']['infrastructure']))
                 <tr>
                     <th>Парковка</th>
-                    <td>подземная - 1016 мест, 17 500 руб коэффициент - 1:60</td>
-                    <td>наземная - 22 000 руб</td>
-                    <td>наземная - 25 мест, 15 000 руб коэффициент - 1/20</td>
-                    <td>коэффициент - 1/60</td>
+                    @foreach($data[0] as $offer)
+                        <td>{{ $offer->features['car-place'] == 'parking' ? 'Есть' : '' }}</td>
+                    @endforeach
                 </tr>
+            @endif
                 <tr>
                     <th>Управляющая компания</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    @foreach($data[0] as $offer)
+                        <td></td>
+                    @endforeach
                 </tr>
+            @if (isset($params['commercial']['main_rent']))
                 <tr class="cs-bg-last">
-                    <th>Арендная ставка/м &sup2;/ год</th>
-                    <td>от 25000 руб. до 30000 руб</td>
-                    <td>28333 руб</td>
-                    <td>20000 руб.</td>
-                    <td>от 40000 руб. до 46000 руб.</td>
+                    <th >Арендная ставка</th>
+                    @foreach($data[0] as $offer)
+                        <td>от {{ $offer->propertys()->min('price_rent') }} руб. до {{ $offer->propertys()->max('price_rent') }} руб.</td>
+                    @endforeach
                 </tr>
+            @endif
+
                 <tr class="cs-bg-last">
                     <th>Операционные расходы/м &sup2;/ год</th>
-                    <td>Exclude 8000</td>
-                    <td>Exclude 5000 RUB/м2 в год</td>
-                    <td>Exclude 4000</td>
-                    <td>Exclude 7500</td>
+                    @foreach($data[0] as $offer)
+                        <td></td>
+                    @endforeach
                 </tr>
                 <tr class="cs-bg-last">
-                    <th>Кольцевая зона</th>
-                    <td>TTR</td>
-                    <td>SK</td>
-                    <td>SK</td>
-                    <td>TTR</td>
+                    <th></th>
+                    @foreach($data[0] as $offer)
+                        <td></td>
+                    @endforeach
                 </tr>
             </tbody>
         </table>
@@ -175,31 +145,61 @@
 {{--    @component('exports.components.3.footer') @endcomponent--}}
     <p class="page-break"></p>
 
-    @component('exports.components.4.header', ['logo' => $logo, 'params' => $params]) @endcomponent
+{{--    @component('exports.components.4.header', ['logo' => $logo, 'params' => $params, 'class' => 'second_header']) @endcomponent--}}
+<div class="test width-100">
+    <div class="width-80 dinline-block">
+        <div class="header-title-block {{ $class ?? '' }}">
+            <div class="header-text">
+                <div class="header-title">
+                    <p>Сравнительный конкурентный анализ</p>
+                </div>
+                <div class="header-add-info">
+                    <span class="address">123456, Moscow, Pravdy st, bld 15</span>
+                    <span class="website">www.ourrealestate.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="width-19 dinline-block p-20">
+        <div class="main-logo image-block">
+            logo
+        </div>
+    </div>
+</div>
 
+        @php
+            $map_src = 'https://maps.googleapis.com/maps/api/staticmap?center=';
+            $map_tools = [
+                ['name' => 'B', 'color' => 'blue'],
+                ['name' => 'S', 'color' => 'red'],
+                ['name' => 'G', 'color' => 'green'],
+                ['name' => 'C', 'color' => 'pink'],
+            ];
+        @endphp
+        @foreach($data[0] as $offer)
+            @if ($loop->iteration == 1)
+                @php($map_src .= $offer->location['lat'] . ',' . $offer->location['lon'] . '&zoom=9&size=800x600&markers=color:' . $map_tools[$loop->index]['color'] . '%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C' . $offer->location['lat'] . ',' . $offer->location['lon'])
+            @else
+                @php($map_src .= '&markers=color:' . $map_tools[$loop->index]['color'] . '%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C' .  $offer->location['lat'] . ',' . $offer->location['lon'] . '&markers=color:blue%7Clabel:' . $map_tools[$loop->index]['name'] . '%7C')
+            @endif
+        @endforeach
+        @php($map_src .= '&key=' . env('GOOGLE_MAPS_API_KEY'))
 
-    <div class="inner-content">
+        <div class="inner-content">
         <div class="location">
             <div class="width-20 dinline-block p-r-20">
                 <div class="objects-list">
                     <ul>
-                        <li>Алкон (стр. 4)</li>
-                        <li>Особняк на Смоленской</li>
-                        <li>Б.Татарская 35с4</li>
-                        <li>60 Город Столиц (Северная Башня)</li>
-                        <li>Алкон (стр. 4)</li>
-                        <li>Особняк на Смоленской</li>
-                        <li>Б.Татарская 35с4</li>
-                        <li>60 Город Столиц (Северная Башня)</li>
-                        <li>Алкон (стр. 4)</li>
-                        <li>Особняк на Смоленской</li>
-                        <li>Б.Татарская 35с4</li>
-                        <li>60 Город Столиц (Северная Башня)</li>
+                        @foreach($data[0] as $offer)
+                            <li>{{ $offer->name }}</li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
-            <div class="width-70 dinline-block">
-                <div class="objects-map"></div>
+            <div class="width-75 dinline-block">
+                <div class="objects-map" style="background-image: url({{ $map_src }});">
+{{--                    <img src="{{ $map_src }}" alt="">--}}
+                </div>
             </div>
         </div>
         </div>

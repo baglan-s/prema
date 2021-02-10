@@ -9,6 +9,9 @@ body {
 body.landscape {
     width: 1032px;
 }
+body.new-body {
+    width: 650px;
+}
 .content {
     position: relative;
     width: 100%;
@@ -19,6 +22,9 @@ body.landscape {
 body.landscape .content {
     margin-left: -15px;
     margin-top: -15px;
+}
+body.new-body .content {
+    margin-left: -23px;
 }
 .width-100 {
     width: 100%;
@@ -34,6 +40,12 @@ body.landscape .content {
 }
 .width-80 {
     width: 80%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-78 {
+    width: 78%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -142,6 +154,12 @@ body.landscape .content {
 }
 .width-23 {
     width: 23%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-22 {
+    width: 22%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

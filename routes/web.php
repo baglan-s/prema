@@ -12,10 +12,11 @@ use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\TempController;
+use App\Http\Controllers\Ajax\FeedbackController;
 
-Route::get('/', function () {
-    return view('custom.welcome');
-});
+//Route::get('/', function () {
+//    return view('custom.welcome');
+//});
 
 Auth::routes();
 
@@ -28,10 +29,11 @@ Route::get('/download/{fileName}', function ($fileName) {
  App routes ------
  */
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/update-database', [HomeController::class, 'updateDatabase'])->name('update-database');
 Route::get('/create-presentation', [HomeController::class, 'createPresentation'])->name('create-presentation');
 Route::get('/new-presentation', [HomeController::class, 'newPresentation'])->name('new-presentation');
+Route::post('/send-feedback', [FeedbackController::class, 'sendTemplate'])->name('send-feedback');
 
 Route::get('/teams',
     [TeamsController::class, 'index'])->name('teams.index');

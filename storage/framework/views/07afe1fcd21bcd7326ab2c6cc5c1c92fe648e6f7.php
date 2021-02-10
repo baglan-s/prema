@@ -38,16 +38,19 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-6">
-                    <div class="header-icon-menu d-flex justify-content-end">
-                        <a href="" class="icon-menu-item">
-                            <img src="<?php echo e(asset('img/phone-icon.png')); ?>" alt="">
+                    <div class="header-icon-menu d-flex justify-content-end align-items-center">
+                        <a href="tel:+77451236542" class="icon icon-menu-item d-md-none d-sm-inline">
+                            <img class="" src="<?php echo e(asset('img/phone-icon.png')); ?>" alt="">
                         </a>
-                        <a href="" class="icon-menu-item">
-                            <img src="<?php echo e(asset('img/edit-icon.png')); ?>" alt="">
+                        <a href="tel:+77451236542" class="phone d-md-inline d-sm-none d-none">
+                            <span class="">+7 (745) 123 65 42</span>
                         </a>
-                        <a href="" class="icon-menu-item">
-                            <img src="<?php echo e(asset('img/gear-icon.png')); ?>" alt="">
-                        </a>
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -85,6 +88,7 @@
 <script src="<?php echo e(asset('js/app.js')); ?>"></script>
 <?php echo $__env->yieldPushContent('scripts'); ?>
 <?php echo $__env->yieldPushContent('block-scripts'); ?>
+<script src="<?php echo e(asset('js/custom.js')); ?>"></script>
 
 </body>
 </html>

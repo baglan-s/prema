@@ -14,19 +14,34 @@ class TempController extends Controller
 //        $offers = Offer::all()->pluck('id');
 //        DataGeocodingService::make($offers->toArray());
 
+//        $offers = Offer::all()->pluck('id')->toArray();
+//        DataGeocodingService::make($offers);
+
         $response = app('geocoder')
             ->geocode('Los Angeles, CA')
             ->get();
 
-        var_dump($response);
-
-//        echo '<p style="width:70%;">
-//                <img src="https://maps.googleapis.com/maps/api/staticmap?scale=2&amp;size=1280x1280&amp;markers=color:blue%7Clabel%3A1%7C55.805791%2C37.520339&amp;markers=color:blue%7Clabel%3A2%7C55.761818%2C37.617563&amp;markers=color:blue%7Clabel%3A3%7C55.780998%2C37.572154&amp;markers=color:blue%7Clabel%3A4%7C55.779808%2C37.570402&amp;markers=color:blue%7Clabel%3A5%7C55.747115%2C37.539078&amp;markers=color:blue%7Clabel%3A6%7C55.880101%2C37.433343&amp;markers=color:blue%7Clabel%3A7%7C55.7208152%2C37.6007115&amp;key=AIzaSyDMYrZZhMGlK5PKOMQRQMVffXnUJwgyatY" style="display:inline-block;width:100%;margin-right:50px;float:left;margin-top:2px">
-//            </p>';
+        $lat = $response[0]->getCoordinates()->getLatitude();
+        $lon = $response[0]->getCoordinates()->getLongitude();
+//
+//        echo '<pre>';
+//        print_r($response[0]->getCoordinates()->getLatitude());
+//        foreach ($response as $item) {
+//
+//            print_r($item);
+//        }
+        $key = env("GOOGLE_MAPS_API_KEY");
+        echo "https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lon&zoom=6&size=400x400&markers=color:blue&key=$key";
+        echo '<p style="width:70%;">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=' . $lat . ',' . $lon . '&zoom=6&size=400x400
+&markers=color:blue%7Clabel:S%7C' . $lat . ',' . $lon . '&markers=color:red%7Clabel:S%7C' . ($lat - 1) . ',' . ($lon + 1) . '&key=' . env('GOOGLE_MAPS_API_KEY') . '" style="display:inline-block;width:100%;margin-right:50px;float:left;margin-top:2px">
+            </p>';
     }
 
     public function test()
     {
-        return view('exports.templates.4', ['logo' => 'test', 'params' => []]);
+        $offer = Offer::find(1);
+        echo $offer->propertys()->min('price_rent');
+//        return view('exports.templates.5', ['logo' => 'test', 'params' => []]);
     }
 }

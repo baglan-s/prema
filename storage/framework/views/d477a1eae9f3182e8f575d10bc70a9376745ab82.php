@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="width-81 dinline-block">
+    <div class="width-80 dinline-block">
         <div class="header-title-block <?php echo e($class ?? ''); ?>">
             <div class="header-text">
                 <div class="header-title">

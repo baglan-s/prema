@@ -38,16 +38,19 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-6">
-                    <div class="header-icon-menu d-flex justify-content-end">
-                        <a href="" class="icon-menu-item">
-                            <img src="{{ asset('img/phone-icon.png') }}" alt="">
+                    <div class="header-icon-menu d-flex justify-content-end align-items-center">
+                        <a href="tel:+77451236542" class="icon icon-menu-item d-md-none d-sm-inline">
+                            <img class="" src="{{ asset('img/phone-icon.png') }}" alt="">
                         </a>
-                        <a href="" class="icon-menu-item">
-                            <img src="{{ asset('img/edit-icon.png') }}" alt="">
+                        <a href="tel:+77451236542" class="phone d-md-inline d-sm-none d-none">
+                            <span class="">+7 (745) 123 65 42</span>
                         </a>
-                        <a href="" class="icon-menu-item">
-                            <img src="{{ asset('img/gear-icon.png') }}" alt="">
-                        </a>
+{{--                        <a href="" class="icon-menu-item">--}}
+{{--                            <img src="{{ asset('img/edit-icon.png') }}" alt="">--}}
+{{--                        </a>--}}
+{{--                        <a href="" class="icon-menu-item">--}}
+{{--                            <img src="{{ asset('img/gear-icon.png') }}" alt="">--}}
+{{--                        </a>--}}
                     </div>
                 </div>
             </div>
@@ -81,6 +84,7 @@
 <script src="{{ asset('js/app.js') }}"></script>
 @stack('scripts')
 @stack('block-scripts')
+<script src="{{ asset('js/custom.js') }}"></script>
 
 </body>
 </html>
