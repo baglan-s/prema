@@ -14,7 +14,7 @@
                 <div class="title-block">
                     <h2 class="title">Сравнительный конкурентный анализ</h2>
                 </div>
-                <div class="logo-block" style="background-image: url({{ url($logo) }})"></div>
+{{--                <div class="logo-block" style="background-image: url({{ url($logo) }})"></div>--}}
             </td>
         </tr>
         <tr>
