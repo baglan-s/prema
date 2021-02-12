@@ -31,7 +31,7 @@
     top: 0;
     background-color: #758782;
     width: 870px;
-    content: 'asdjasdkj';
+    content: '';
     height: 100%;
     display: inline-block;
     -webkit-transform: skew(-50deg);
@@ -133,7 +133,7 @@
     width: 202px;
     height: 110%;
     background-color: #758782;
-    left: -194%;
+    left: -201%;
     top: 0;
     -webkit-transform: skew(-50deg);
     -moz-transform: skew(-50deg);

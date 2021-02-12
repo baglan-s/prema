@@ -272,7 +272,7 @@
             </tr>
         <?php endif; ?>
     </table>
-    <p class="page-break"></p>
+
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </body>
 </html>

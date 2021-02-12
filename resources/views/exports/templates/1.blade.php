@@ -269,7 +269,7 @@
             </tr>
         @endif
     </table>
-    <p class="page-break"></p>
+{{--    <p class="page-break"></p>--}}
 @endforeach
 </body>
 </html>

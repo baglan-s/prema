@@ -291,7 +291,9 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
     </div>
-    <p class="page-break"></p>
+    <?php if(!$loop->last): ?>
+        <p class="page-break"></p>
+    <?php endif; ?>
 
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </body>

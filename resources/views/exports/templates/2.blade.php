@@ -263,7 +263,9 @@
 
         @component('exports.components.2.footer', ['offer' => $offer, 'params' => $params]) @endcomponent
     </div>
-    <p class="page-break"></p>
+    @if (!$loop->last)
+        <p class="page-break"></p>
+    @endif
 
 @endforeach
 </body>

@@ -208,7 +208,7 @@
 
 </div>
 
-<p class="page-break"></p>
+{{--<p class="page-break"></p>--}}
 
 {{--@foreach($data[0] as $offer)--}}
 

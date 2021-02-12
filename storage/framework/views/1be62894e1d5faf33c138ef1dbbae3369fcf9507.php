@@ -119,10 +119,9 @@
             <?php endif; ?>
                 <tr>
                     <th>Управляющая компания</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
             <?php if(isset($params['commercial']['main_rent'])): ?>
                 <tr class="cs-bg-last">
@@ -135,17 +134,15 @@
 
                 <tr class="cs-bg-last">
                     <th>Операционные расходы/м &sup2;/ год</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
                 <tr class="cs-bg-last">
                     <th></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <?php $__currentLoopData = $data[0]; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $offer): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <td></td>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </tr>
             </tbody>
         </table>
@@ -216,7 +213,7 @@
 
 </div>
 
-<p class="page-break"></p>
+
 
 
 

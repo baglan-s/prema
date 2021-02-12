@@ -201,10 +201,10 @@
     </div>
 
     @component('exports.components.5.footer') @endcomponent
-    <p class="page-break"></p>
+{{--    <p class="page-break"></p>--}}
 
 </div>
-<p class="page-break"></p>
+{{--<p class="page-break"></p>--}}
 
 {{--@foreach($data[0] as $offer)--}}
 

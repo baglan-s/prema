@@ -200,10 +200,8 @@
     </div>
 
     @component('exports.components.3.footer') @endcomponent
-    <p class="page-break"></p>
 
 </div>
-<p class="page-break"></p>
 
 {{--@foreach($data[0] as $offer)--}}
 
