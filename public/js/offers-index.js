@@ -30,18 +30,19 @@
                     if (success = response.data.success) {
                         if (content = response.data.content) {
                             gallery.innerHTML = content;
-                            gallery.classList.toggle('d-none');
+                            // gallery.classList.toggle('d-none');
                             gallery.classList.toggle('d-block');
                             caption.classList.toggle('d-block');
                             caption.classList.toggle('d-none');
                             caption.innerHTML = closeText;
                             let galleryItems = gallery.querySelectorAll('.js-gallery-item');
-
                             if (galleryItems.length) {
+
                                 galleryItems.forEach((item) => {
-                                    let action = item.getAttribute('data-action');
 
                                     item.addEventListener('click', () => {
+                                        let action = item.getAttribute('data-action');
+                                        console.log(action);
                                         let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
                                         if (offerSelector.length > 4) {
                                             alert('Max offers quantity to choose: 4');
@@ -60,13 +61,16 @@
                                                 if (!filterItemsVal[item.dataset.category]) filterItemsVal[item.dataset.category] = {};
                                                 filterItemsVal[item.dataset.category][item.getAttribute('name')] = item.value;
                                             });
-                                            exportsPanel.click();
+                                            // exportsPanel.click();
+
 
                                             axios.post(action, filterItemsVal)
                                                 .then((response) => {
                                                     if (success = response.data.success) {
                                                         let content = response.data.content;
                                                         gallery.innerHTML = content;
+                                                        console.log(content);
+                                                        console.log(gallery.innerHTML.length);
                                                         preloader.style.display = 'none';
                                                     }
                                                 })
