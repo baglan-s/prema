@@ -41,6 +41,7 @@
                                 galleryItems.forEach((item) => {
 
                                     item.addEventListener('click', () => {
+                                        console.log(item);
                                         let action = item.getAttribute('data-action');
                                         console.log(action);
                                         let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
