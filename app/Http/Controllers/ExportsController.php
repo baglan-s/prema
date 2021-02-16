@@ -79,19 +79,17 @@ class ExportsController extends Controller
         $result = ExportPDF::make($teamId, 'exports.templates.third', $request->all());
 
         if ($result === false) {
-            echo response()->json([
+            return response()->json([
                 'success' => false,
             ]);
-            exit;
         }
 
         $content = $result;
 
-        echo response()->json([
+        return response()->json([
             'success' => true,
             'content' => $content,
         ]);
-        exit;
     }
 
     public function export(Request $request, $template_name, int $teamId)
