@@ -41,7 +41,6 @@
                                 galleryItems.forEach((item) => {
 
                                     item.addEventListener('click', () => {
-                                        console.log(item);
                                         let action = item.getAttribute('data-action');
                                         console.log(action);
                                         let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
@@ -55,6 +54,7 @@
                                         generatePres.addEventListener('click', function () {
                                             $('#exportFilter').modal('hide');
                                             preloader.style.display = 'block';
+                                            console.log(item);
 
                                             let filterItems = $('.filter-items:checked');
                                             let filterItemsVal = {};
