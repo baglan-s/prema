@@ -59,6 +59,34 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header">Choose the templates for this team</div>
+            <div class="card-body">
+                <div class="form-row">
+                    <?php if($templates->count()): ?>
+                        <?php $__currentLoopData = $templates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $template): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($loop->iteration == 1 || $loop->iteration%5 == 0): ?>
+                                <div class="col-md-4">
+                                    <?php endif; ?>
+                                    <?php if($team->templates->count() && in_array($template->id, $team->templates()->pluck('id')->toArray())): ?>
+                                        <div class="form-check">
+                                            <input class="form-check-input" checked name="template_ids[]" type="checkbox" id="teamTemplate<?php echo e($loop->iteration); ?>" value="<?php echo e($template->id); ?>">
+                                            <label class="form-check-label" for="teamTemplate<?php echo e($loop->iteration); ?>"><?php echo e($template->name); ?></label>
+                                        </div>
+                                    <?php else: ?>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="template_ids[]" type="checkbox" id="teamTemplate<?php echo e($loop->iteration); ?>" value="<?php echo e($template->id); ?>">
+                                            <label class="form-check-label" for="teamTemplate<?php echo e($loop->iteration); ?>"><?php echo e($template->name); ?></label>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if($loop->last || $loop->iteration%5 == 0): ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
         <div class="form-row mt-3">
             <div class="col-sm-12">
                 <div class="d-flex justify-content-end">

@@ -1,14 +1,14 @@
 <div class="row gallery-row">
     <?php if(count($templates)): ?>
-        <?php $__currentLoopData = $templates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <?php $__currentLoopData = $templates; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $template): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div
               class="col-xl-6 gallery-item js-gallery-item"
 
 
 
-              data-action="<?php echo e(route('exports.export', [$loop->iteration, $team_id])); ?>"
+              data-action="<?php echo e(route('exports.export', [$template->name, $team_id])); ?>"
 
-              style="background-image: url('<?php echo e(url('exports/images/'.$value)); ?>');"
+              style="background-image: url('<?php echo e(asset($template->image)); ?>');"
             >
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

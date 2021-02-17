@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Template;
 
 class Team extends Model
 {
@@ -33,6 +34,11 @@ class Team extends Model
 
     public function users() {
         return $this->belongsToMany(User::class);
+    }
+
+    public function templates()
+    {
+        return $this->belongsToMany(Template::class);
     }
 
     /**

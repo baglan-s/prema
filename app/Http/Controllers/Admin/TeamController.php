@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Team;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Template;
 
 class TeamController extends Controller
 {
@@ -34,6 +35,7 @@ class TeamController extends Controller
         $data = [
             'title' => 'Addition of new team',
             'users' => User::all(),
+            'templates' => Template::all(),
         ];
         return view('admin.team.create', $data);
     }
@@ -63,6 +65,12 @@ class TeamController extends Controller
                 if ($request->has('user_ids') && !empty($request->user_ids)) {
                     foreach ($request->user_ids as $userId) {
                         $team->users()->attach($userId);
+                    }
+                }
+
+                if ($request->has('template_ids') && !empty($request->template_ids)) {
+                    foreach ($request->template_ids as $templateId) {
+                        $team->templates()->attach($templateId);
                     }
                 }
             }
@@ -99,6 +107,7 @@ class TeamController extends Controller
             'title' => 'Editing ' . $team->name,
             'team' => $team,
             'users' => User::all(),
+            'templates' => Template::all(),
         ];
 
         return view('admin.team.edit', $data);
@@ -133,6 +142,13 @@ class TeamController extends Controller
                         $team->users()->attach($userId);
                     }
                 }
+
+                $team->templates()->detach();
+                if ($request->has('template_ids') && !empty($request->template_ids)) {
+                    foreach ($request->template_ids as $templateId) {
+                        $team->templates()->attach($templateId);
+                    }
+                }
             }
             else {
                 $request->session()->flash('msg_error', 'Error! Please try later');
@@ -154,6 +170,10 @@ class TeamController extends Controller
         $team = Team::findOrFail($id);
         if ($team->users->count()) {
             $team->users()->detach();
+        }
+
+        if ($team->templates->count()) {
+            $team->templates()->detach();
         }
 
         if ($team->delete()) {

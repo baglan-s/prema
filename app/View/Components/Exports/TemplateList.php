@@ -2,7 +2,9 @@
 
 namespace App\View\Components\Exports;
 
+use App\Models\Team;
 use Illuminate\View\Component;
+use App\Models\Template;
 
 class TemplateList extends Component
 {
@@ -39,7 +41,7 @@ class TemplateList extends Component
     public function __construct(int $teamId)
     {
         $this->teamId = $teamId;
-        $this->templates = $this->getCollection();
+        $this->templates = $this->getCollection($teamId);
     }
 
     /**
@@ -67,9 +69,13 @@ class TemplateList extends Component
      * Get the data collection
      * @return array
      */
-    protected function getCollection()
+    protected function getCollection($teamId = false)
     {
-        return $this->data;
+        if ($teamId) {
+            $team = Team::find($teamId);
+            return $team->templates;
+        }
+        return Template::all();
     }
 
 }

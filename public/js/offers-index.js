@@ -4,6 +4,8 @@
     let exportsPanel = document.querySelector('.js-exports-panel');
     let templatesGallery = document.querySelector('.templates-gallery');
     let preloader = document.querySelector('.loader');
+    let prezaAction;
+    let gallery;
     if (exportsPanel && templatesGallery) {
         const closeText = 'Close';
         const processStart = 'Loading...';
@@ -11,7 +13,7 @@
         let caption = exportsPanel.children[0];
         caption.innerHTML = exportsPanelCaptionText;
         exportsPanel.addEventListener('click', () => {
-            let gallery = templatesGallery;
+            gallery = templatesGallery;
             let action  = gallery.getAttribute('data-action');
             if (caption.innerHTML == closeText) {
                 gallery.classList.remove('d-block');
@@ -35,54 +37,18 @@
                             caption.classList.toggle('d-block');
                             caption.classList.toggle('d-none');
                             caption.innerHTML = closeText;
-                            let galleryItems = gallery.querySelectorAll('.js-gallery-item');
+                            let galleryItems = $('.js-gallery-item');
                             if (galleryItems.length) {
 
-                                galleryItems.forEach((item) => {
-
-                                    item.addEventListener('click', () => {
-                                        let action = item.getAttribute('data-action');
-                                        console.log(action);
-                                        let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
-                                        if (offerSelector.length > 4) {
-                                            alert('Max offers quantity to choose: 4');
-                                            return false;
-                                        }
-                                        $('#exportFilter').modal('show');
-                                        let generatePres = document.querySelector('#generatePres');
-
-                                        generatePres.addEventListener('click', function () {
-                                            $('#exportFilter').modal('hide');
-                                            preloader.style.display = 'block';
-                                            console.log(item);
-
-                                            let filterItems = $('.filter-items:checked');
-                                            let filterItemsVal = {};
-                                            filterItems.each(function (id, item) {
-                                                if (!filterItemsVal[item.dataset.category]) filterItemsVal[item.dataset.category] = {};
-                                                filterItemsVal[item.dataset.category][item.getAttribute('name')] = item.value;
-                                            });
-                                            // exportsPanel.click();
-
-
-                                            axios.post(action, filterItemsVal)
-                                                .then((response) => {
-                                                    if (success = response.data.success) {
-                                                        let content = response.data.content;
-                                                        gallery.innerHTML = content;
-                                                        console.log(content);
-                                                        console.log(gallery.innerHTML.length);
-                                                        preloader.style.display = 'none';
-                                                    }
-                                                })
-                                                .catch((failure) => {
-                                                    console.log(failure);
-                                                    alert('Failed to export...');
-                                                });
-                                        });
-
-
-                                    });
+                                galleryItems.click(function () {
+                                    prezaAction = $(this).data('action');
+                                    // console.log(action);
+                                    let offerSelector = offersTable.querySelectorAll('.js-offer-selector:checked');
+                                    if (offerSelector.length > 4) {
+                                        alert('Max offers quantity to choose: 4');
+                                        return false;
+                                    }
+                                    $('#exportFilter').modal('show');
                                 });
                             }
                         }
@@ -93,6 +59,34 @@
                 });
         });
     }
+
+    $('#generatePres').click(function () {
+        $('#exportFilter').modal('hide');
+        preloader.style.display = 'block';
+
+        let filterItems = $('.filter-items:checked');
+        let filterItemsVal = {};
+        filterItems.each(function (id, item) {
+            if (!filterItemsVal[item.dataset.category]) filterItemsVal[item.dataset.category] = {};
+            filterItemsVal[item.dataset.category][item.getAttribute('name')] = item.value;
+        });
+        exportsPanel.click();
+
+
+        axios.post(prezaAction, filterItemsVal)
+            .then((response) => {
+                if (success = response.data.success) {
+                    let content = response.data.content;
+                    gallery.innerHTML = content;
+                    console.log(content);
+                    preloader.style.display = 'none';
+                }
+            })
+            .catch((failure) => {
+                console.log(failure);
+                alert('Failed to export...');
+            });
+    });
 
     // Show/hide the property filters
     let withPropertys = document.querySelector('#withPropertys');

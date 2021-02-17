@@ -51,6 +51,27 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header">Choose the templates for this team</div>
+            <div class="card-body">
+                <div class="form-row">
+                    @if ($templates->count())
+                        @foreach($templates as $template)
+                            @if ($loop->iteration == 1 || $loop->iteration%6 == 0)
+                                <div class="col-md-4">
+                                    @endif
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="template_ids[]" type="checkbox" id="teamTemplate{{ $loop->iteration }}" value="{{ $template->id }}">
+                                        <label class="form-check-label" for="teamTemplate{{ $loop->iteration }}">{{ $template->name }}</label>
+                                    </div>
+                                    @if ($loop->last || $loop->iteration%5 == 0)
+                                </div>
+                            @endif
+                        @endforeach
+                    @endif
+                </div>
+            </div>
+        </div>
         <div class="form-row mt-3">
             <div class="col-sm-12">
                 <div class="d-flex justify-content-end">
