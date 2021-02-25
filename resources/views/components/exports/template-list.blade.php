@@ -10,6 +10,7 @@
 {{--              @endif--}}
               style="background-image: url('{{ asset($template->image) }}');"
             >
+                <span class="gallery-item-title">{{ $template->template_name }}</span>
             </div>
         @endforeach
     @endif

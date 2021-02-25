@@ -62,7 +62,7 @@
                                     @endif
                                     <div class="form-check">
                                         <input class="form-check-input" name="template_ids[]" type="checkbox" id="teamTemplate{{ $loop->iteration }}" value="{{ $template->id }}">
-                                        <label class="form-check-label" for="teamTemplate{{ $loop->iteration }}">{{ $template->name }}</label>
+                                        <label class="form-check-label" for="teamTemplate{{ $loop->iteration }}">{{ $template->template_name }}</label>
                                     </div>
                                     @if ($loop->last || $loop->iteration%5 == 0)
                                 </div>

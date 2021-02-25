@@ -10,6 +10,7 @@
 
               style="background-image: url('<?php echo e(asset($template->image)); ?>');"
             >
+                <span class="gallery-item-title"><?php echo e($template->template_name); ?></span>
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     <?php endif; ?>

@@ -178,6 +178,17 @@ footer .owner-name a {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+.gallery-item {
+    position: relative;
+}
+.gallery-item-title {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    top: 30px;
+    left: 32px;
+}
 
 
 
