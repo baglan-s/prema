@@ -32,6 +32,36 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-98 {
+    width: 98%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-97 {
+    width: 97%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-95 {
+    width: 95%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-91 {
+    width: 91%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-89 {
+    width: 89%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-81 {
     width: 81%;
     -webkit-box-sizing: border-box;
@@ -62,6 +92,12 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-69 {
+    width: 69%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-68 {
     width: 68%;
     -webkit-box-sizing: border-box;
@@ -74,14 +110,62 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-62 {
+    width: 62%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-60 {
     width: 60%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-59 {
+    width: 59%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-58 {
+    width: 58%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-57 {
+    width: 57%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-56 {
+    width: 56%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-55 {
+    width: 55%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-53 {
     width: 53%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-52 {
+    width: 52%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-51 {
+    width: 51%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -98,6 +182,12 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-41 {
+    width: 41%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-47 {
     width: 47%;
     -webkit-box-sizing: border-box;
@@ -106,6 +196,12 @@ body.new-body .content {
 }
 .width-45 {
     width: 45%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-42 {
+    width: 42%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -128,6 +224,12 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-34 {
+    width: 34%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .width-30 {
     width: 30%;
     -webkit-box-sizing: border-box;
@@ -142,6 +244,12 @@ body.new-body .content {
 }
 .width-27 {
     width: 27%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-26 {
+    width: 26%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -182,6 +290,18 @@ body.new-body .content {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.width-9 {
+    width: 9%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.width-7 {
+    width: 7%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .dinline-block {
     display: inline-block;
     vertical-align: top;
@@ -211,8 +331,17 @@ body.new-body .content {
 .m-b-30 {
     margin-bottom: 30px;
 }
+.m-t-20 {
+    margin-top: 20px;
+}
 .m-b-20 {
     margin-bottom: 20px;
+}
+.m-t-10 {
+    margin-top: 10px;
+}
+.m-b-10 {
+    margin-bottom: 10px;
 }
 .p-15 {
     padding: 15px;
@@ -243,6 +372,9 @@ body.new-body .content {
 }
 .p-b-40 {
     padding-bottom: 40px;
+}
+.p-t-20 {
+    padding-top: 20px;
 }
 table {
     border-collapse: collapse;

@@ -40,8 +40,8 @@ class TempController extends Controller
 
     public function test()
     {
-        $offer = Offer::find(1);
-        echo $offer->propertys()->min('price_rent');
-//        return view('exports.templates.5', ['logo' => 'test', 'params' => []]);
+//        $offer = Offer::find(1);
+//        echo $offer->propertys()->min('price_rent');
+        return view('exports.templates.10', ['logo' => 'test', 'params' => []]);
     }
 }

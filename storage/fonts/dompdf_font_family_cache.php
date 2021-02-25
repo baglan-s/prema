@@ -115,6 +115,7 @@
     '600' => $fontDir . '/montserrat-600_e1bd5923511b8d8a0a196b1017df92a7',
     'bold' => $fontDir . '/montserrat-bold_6beb6e27cd8907eec374534ce0d119ec',
     '800' => $fontDir . '/montserrat-800_3593059443dde0e05fef2d4793944645',
+    '900' => $fontDir . '/montserrat-900_cb9a1915ad454ac1a9cd14770452bad9',
   ),
   'open sans' => array(
     '300' => $fontDir . '/open-sans-300_18491a02e3fc7d506986820e13f048c0',
@@ -122,5 +123,16 @@
     '600' => $fontDir . '/open-sans-600_853de7ab09ff7918d624094dafe1862a',
     'bold' => $fontDir . '/open-sans-bold_cc60b226b40fe264959c658e8d97699b',
     '800' => $fontDir . '/open-sans-800_51113de724d5697bedf4d5fad2d9c5a4',
+  ),
+  'merriweather' => array(
+    '300' => $fontDir . '/merriweather-300_fd5f72dd7a3c3cffa54a05be4cad3a89',
+    'normal' => $fontDir . '/merriweather-normal_0b98653871c169c53311c1beaa5cf158',
+    'bold' => $fontDir . '/merriweather-bold_ca9ec64b7e4eb8abdaec3d96d045de98',
+  ),
+  'roboto' => array(
+    '300' => $fontDir . '/roboto-300_560416baba154a183b2ccc6468b2c118',
+    'normal' => $fontDir . '/roboto-normal_9e96d9e23ad102bc05be47680b365314',
+    '500' => $fontDir . '/roboto-500_f4a9bd25e4929a6414964bb51d71950f',
+    'bold' => $fontDir . '/roboto-bold_fd07d89b19ff1de56e1d341daaa21df7',
   ),
 ) ?>

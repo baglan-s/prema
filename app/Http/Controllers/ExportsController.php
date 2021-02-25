@@ -96,7 +96,7 @@ class ExportsController extends Controller
     {
         $this->checkAccess($teamId);
         $landscape = false;
-        if ($template_name == 4) $landscape = true;
+        if (in_array($template_name, [4, 6, 7, 8, 9])) $landscape = true;
         $result = ExportPDF::make($teamId, 'exports.templates.' . $template_name, $request->all(), $landscape);
 
         if ($result === false) {
